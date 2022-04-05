@@ -5,35 +5,34 @@ let favoriteFruits;
 //    fruits and store them in the previous variable for later printout.
 //
 //    Note: Remember, different items in a list are separated by commas.
-
+favoriteFruits = ["orange", "apple", "grape", "lemon", "lime"];
 
 // Adding items to the END of an Array
 const sports = ["football", "basketball"];
-
 // 2) Use the "push" function on the previous array to add another sport
 //    to the END of the list for later printout
-
+sports.push("baseball");
 
 // Removing items from the END of an Array
 const groceryList = ["pepper", "salt", "oranges"];
 
 // 3) Use the "pop" function on the previous array to remove the LAST
 //    item in the list for later printout
-
+groceryList.pop();
 
 // Adding items to the BEGINNING of an Array
 const seriesMissing1 = [2, 3, 4];
 
 // 4) Use the "unshift" function on the previous array to add 1
 //    to the BEGINNING of the list for later printout
-
+seriesMissing1.unshift(1);
 
 // Removing items from the BEGINNING of an Array
 const seriesWrong = [10, 1, 2, 3, 4];
 
 // 5) Use the "shift" function on the previous array to remove
 //    the FIRST item of the list for later printout
-
+seriesWrong.shift();
 
 // Getting the number of items in an Array
 const randomNumbers = [2, 2, 6, 3, 3, 73, 16, 28, 91];
@@ -41,7 +40,7 @@ const randomNumbers = [2, 2, 6, 3, 3, 73, 16, 28, 91];
 // 6) Use the "length" property on the previous array to retrieve
 //    how many items are in the array and store the result in the
 //    following variable
-let randomNumbersSize;
+let randomNumbersSize = randomNumbers.length;
 
 
 // Getting the index of an existing item in an Array
@@ -49,11 +48,11 @@ const randomWords = ["pen", "pencil", "charcoal", "oil pastel"];
 
 // 7) Use the "indexOf" function on the "randomWords" array to get the index
 //    of the item "pencil" and store the result in the following variable
-let pencilIndex;
+let pencilIndex = randomWords.indexOf("pencil");
 
 // 8) Use the "indexOf" function on the "randomWords" array to get the index
 //    of the item "brush" and store the result in the following variable
-let brushIndex;
+let brushIndex = randomWords.indexOf("brush");
 
 
 // Joining items in an Array into a String
@@ -63,7 +62,7 @@ const sentenceArray = ["The", "quick", "brown", "fox", "jumped", "over", "the", 
 //    into a string, and store the result in the following variable
 //
 //    Note: Make sure you use the parameter to add spacing between each word
-let sentence;
+let sentence = sentenceArray.join(" ");
 
 
 // Creating a (shallow) copy of an Array
@@ -71,11 +70,11 @@ const originalArray = [5, 6, 7];
 
 // 10) Use the "slice" function to create a (shallow) copy of "originalArray"
 //     and store the result in "copiedArray" below
-let copiedArray;
+let copiedArray = originalArray.slice();
 
 // 11) Use the indexing operator [] to set the last index in your copied array
 //     to be 8 instead of 7
-
+copiedArray[2] = 8;
 
 // Adding one Array's items to another Array
 const box1 = ["computer", "television", "laptop"];
@@ -83,7 +82,7 @@ const box2 = ["cake", "juice", "celery"];
 
 // 12) Use the "concat" function to combine the two arrays and store the result
 //    in the follow variable for later printout
-let biggerBox;
+let biggerBox = box1.concat(box2);
 
 
 // Working with Arrays inside Arrays
@@ -94,8 +93,8 @@ const meals = [
 
 // 13) Use the indexing operator to get the last ingredient of each meal
 //     and store their results in their respective variables below
-let bread;
-let cereal;
+let bread = meals[0];
+let cereal = meals[1];
 
 
 // Printouts
